@@ -3,7 +3,7 @@ from django.urls import path
 from Apps.views import buscar, busquedaCamada, cursoFormulario, inicio, cursos, profesores, estudiantes, entregables
 
 urlpatterns = [
-    path("", inicio, name="inicio"),
+    path("inicio", inicio, name="inicio"),
     path("cursos", cursos, name= "cursos"),
     path("estudiantes", estudiantes, name="estudiantes"),
     path("profesores", profesores,name="profesores"),
