@@ -1,0 +1,20 @@
+{% extends "padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia%}
+
+<form action="cursoFormulario" method ="POST"> {% csrf_token %}
+
+    <table>
+
+        {{ miFormulario.as_table }}
+
+    </table>
+
+    <input type="submit" nam="Enviar">
+
+
+</form>
+
+{%endblock%}
